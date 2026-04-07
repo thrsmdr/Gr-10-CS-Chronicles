@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
             <HomepageCard
                 title="ASL Articles"
                 logo={Spotlight}
-                description="Read articles about ASL culture and learning tips."
+                description="Want to learn how to make sentences in ASL? Read articles about ASL culture and learning tips."
                 linkUrl="/article"
             />
             <HomepageCard

@@ -18,6 +18,7 @@ const ArticleSelectPage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>ASL Articles</h1>
+                <p>Want to learn how to make sentences in ASL? Read articles about ASL culture and learning tips.</p>
             <div style={gridStyle}>
                 <ArticleCard
                     id="1"

@@ -38,6 +38,7 @@ const DictionaryPage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>ASL Dictionary</h1>
+            <p>Video demonstrations are recorded by right-handed users, but may also work with the left hand.</p>
 
             <div style={filterContainerStyle}>
                 {categories.map(category => (
