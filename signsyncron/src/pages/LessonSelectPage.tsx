@@ -1,5 +1,5 @@
 import React from "react";
-import { pageContainerStyle, titleStyle, sectiontitlestyle, additionalInfoStyle } from "../theme";
+import { pageContainerStyle, titleStyle, sectiontitlestyle, additionalInfoStyle, paragraphStyle } from "../theme";
 import { LessonData } from "../data/LessonData";
 import LessonSelectCard from "../src/components/LessonSelectCard";
 
@@ -18,6 +18,7 @@ const LessonSelectPage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>ASL Lessons</h1>
+            <p style={paragraphStyle}> Retain basic signs more efficiently through gamified lessons. For more comprehensive information on sentence construction, check out the article page! </p>
 
             <div style={gridStyle}>
                 {LessonData.map((lesson) => (

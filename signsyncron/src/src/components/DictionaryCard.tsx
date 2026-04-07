@@ -11,7 +11,7 @@ const DictionaryCard: React.FC<DictionaryEntry> = ({ signWord: word, videoUrl, n
                     <video 
                         key={videoUrl} 
                         src={videoUrl} 
-                        controls 
+                        autoPlay 
                         loop 
                         muted 
                         playsInline 
