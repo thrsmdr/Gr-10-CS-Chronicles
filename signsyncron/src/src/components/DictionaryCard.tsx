@@ -11,7 +11,7 @@ const DictionaryCard: React.FC<DictionaryEntry> = ({ signWord: word, videoUrl, n
                     <video 
                         key={videoUrl} 
                         src={videoUrl} 
-                        autoPlay 
+                        controls 
                         loop 
                         muted 
                         playsInline 
@@ -40,7 +40,9 @@ const DictionaryCard: React.FC<DictionaryEntry> = ({ signWord: word, videoUrl, n
 const DictionaryCardStyle: React.CSSProperties = {
     backgroundColor: colors.MainCard,
     borderRadius: '12px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    borderColor: colors.MainAction,
+    borderWidth: '0.5px',
+    borderStyle: 'solid',
     padding: '16px',
     margin: '8px 0',
     display: 'flex',

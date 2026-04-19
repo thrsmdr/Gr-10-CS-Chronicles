@@ -30,7 +30,9 @@ const LessonCardStyle: React.CSSProperties = {
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    borderColor: colors.MainAction,
+    borderWidth: '0.5px',
+    borderStyle: 'solid',
     cursor: 'pointer',
 };
 

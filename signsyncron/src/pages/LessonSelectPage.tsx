@@ -1,5 +1,5 @@
 import React from "react";
-import { pageContainerStyle, titleStyle, sectiontitlestyle, additionalInfoStyle, paragraphStyle } from "../theme";
+import { pageContainerStyle, titleStyle, sectiontitlestyle, additionalInfoStyle, secondaryheaderStyle } from "../theme";
 import { LessonData } from "../data/LessonData";
 import LessonSelectCard from "../src/components/LessonSelectCard";
 
@@ -18,7 +18,7 @@ const LessonSelectPage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>ASL Lessons</h1>
-            <p style={paragraphStyle}> Retain basic signs more efficiently through gamified lessons. For more comprehensive information on sentence construction, check out the article page! </p>
+            <p style={secondaryheaderStyle}> Retain basic signs more efficiently through gamified lessons. For more comprehensive information on sentence construction, check out the article page! </p>
 
             <div style={gridStyle}>
                 {LessonData.map((lesson) => (
@@ -33,7 +33,7 @@ const LessonSelectPage: React.FC = () => {
             </div>
 
             <div>
-                        <h2 style={sectiontitlestyle}>More Reliable Sources from Professionals</h2>
+                        <h2 style={sectiontitlestyle}>More Detailed Learning Mediums:</h2>
                         <div style={additionalInfoStyle}>
                             <a href="https://www.aslbloom.com" target="_blank" rel="nopener noreferrer">ASL Bloom - Learn American Sign Language (ASL) Online</a><br />
                             <a href="https://www.lifeprint.com/" target="_blank" rel="noopener noreferrer">Lifeprint - ASL University</a><br />

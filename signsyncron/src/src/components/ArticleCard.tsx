@@ -26,7 +26,9 @@ const cardStyle: React.CSSProperties = {
   alignItems: 'flex-start',
   height: '220px', // Uniform height for all cards
   border: '1px solid #e0e0e0',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
+  borderColor: colors.MainAction,
+  borderWidth: '0.5px',
+  borderStyle: 'solid',
   cursor: 'pointer',
   transition: 'transform 0.2s ease, box-shadow 0.2s ease',
   textAlign: 'left',
@@ -37,8 +39,8 @@ const titleStyle: React.CSSProperties = {
     fontFamily: 'Arial, sans-serif',
     fontSize: '24px',
     fontWeight: '700',
-    fontStyle: 'small-caps',
-    marginBottom: '8px',
+    textAlign: 'left',
+    marginBottom: '5px',
 };
 
 const descriptionStyle: React.CSSProperties = {

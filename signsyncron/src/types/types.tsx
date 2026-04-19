@@ -42,7 +42,8 @@ export interface ArticleEntry {
     points?: {
         label: string;
         description?: string;
-        videoUrl?: string; // Perfect for "Mother vs Father" videos
+        videoUrl?: string;
+        imgUrl?: string;
     }[];
 }
 

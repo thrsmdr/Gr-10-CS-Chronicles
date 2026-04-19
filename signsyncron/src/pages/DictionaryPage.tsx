@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DictionaryCard from '../src/components/DictionaryCard';
 import { DictionaryData } from '../data/DictionaryData';
-import { pageContainerStyle, sectiontitlestyle, titleStyle, paragraphStyle, additionalInfoStyle } from '../theme';
+import { pageContainerStyle, sectiontitlestyle, titleStyle, additionalInfoStyle, secondaryheaderStyle, colors } from '../theme';
 
 const gridStyle: React.CSSProperties = {
     display: 'grid',
@@ -38,7 +38,7 @@ const DictionaryPage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>ASL Dictionary</h1>
-            <p style={paragraphStyle}>Video demonstrations are recorded by right-handed users, but may also work with the left hand.</p>
+            <p style={secondaryheaderStyle}>Video demonstrations below are recorded by right-handed users, but may also work with the left hand.</p>
 
             <div style={filterContainerStyle}>
                 {categories.map(category => (
@@ -50,8 +50,8 @@ const DictionaryPage: React.FC = () => {
                             borderRadius: '20px',
                             border: '1px solid #ddd',
                             cursor: 'pointer',
-                            backgroundColor: activeCategory === category ? '#007AFF' : '#fff', // Change color if active
-                            color: activeCategory === category ? '#fff' : '#333',
+                            backgroundColor: activeCategory === category ? colors.MainAction : '#fff', // Change color if active
+                            color: activeCategory === category ? colors.MainActionText : '#333',
                             fontWeight: '500',
                             transition: 'all 0.2s ease'
                         }}

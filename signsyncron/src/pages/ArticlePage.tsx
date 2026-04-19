@@ -11,7 +11,7 @@ const ArticlePage = () => {
 
     return (
         <div style={pageContainerStyle}>
-            <h1 style={{ color: '#333', marginBottom: '20px' }}>{article.title}</h1>
+            <h1 style={{ color: colors.MainAction, marginBottom: '20px' }}>{article.title}</h1>
             <h2 style={{ color: colors.MainTextSecondary, marginBottom: '40px' }}>{article.text}</h2>
             
             {article.sections.map((section, index) => (

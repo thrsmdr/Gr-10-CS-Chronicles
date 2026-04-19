@@ -1,5 +1,5 @@
 import ArticleCard from "../src/components/ArticleCard";
-import { pageContainerStyle, titleStyle, paragraphStyle } from "../theme";
+import {  pageContainerStyle, titleStyle, secondaryheaderStyle } from "../theme";
 import { useNavigate } from 'react-router-dom';
 
 const gridStyle: React.CSSProperties = {
@@ -18,7 +18,7 @@ const ArticleSelectPage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>ASL Articles</h1>
-                <p style={paragraphStyle}>Want to learn how to make sentences in ASL? Read articles about ASL culture and learning tips.</p>
+                <p style={secondaryheaderStyle}>Want to learn how to make sentences in ASL? Read articles about ASL culture and learning tips.</p>
             <div style={gridStyle}>
                 <ArticleCard
                     id="1"
@@ -39,6 +39,8 @@ const ArticleSelectPage: React.FC = () => {
         </div>
     );
 };
+
+
 
 export default ArticleSelectPage;
 

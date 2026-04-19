@@ -1,13 +1,16 @@
 import React from "react";
 import HomepageCard from '../src/components/HomepageCard';
-import { pageContainerStyle, titleStyle, sectiontitlestyle, additionalInfoStyle } from "../theme";
+import { pageContainerStyle, titleStyle, sectiontitlestyle, additionalInfoStyle, colors, secondaryheaderStyle } from "../theme";
 import { Spotlight, BookOpen, Puzzle, InfoIcon } from "lucide-react";
 
 const HomePage: React.FC = () => {
     return (
         <div style={pageContainerStyle}>
+            <div style={logoStyle}>
+                <img src="https://res.cloudinary.com/dqzxf6v8b/image/upload/Untitled47_20260419101159.png" width="100" height="80" />
+            </div>
             <h1 style={titleStyle}>Welcome to Sign_Sync</h1>
-            <p> Discover more about the world of sign language through: </p>
+            <p style={secondaryheaderStyle}>Discover more about the world of sign language through: </p>
         <div style={gridStyle}>
             <HomepageCard
                 title="ASL Lessons"
@@ -35,7 +38,7 @@ const HomePage: React.FC = () => {
             />
         </div>
         <div>
-            <h2 style={sectiontitlestyle}>More Reliable Sources from Professionals</h2>
+            <h2 style={sectiontitlestyle}>More Detailed Learning Mediums:</h2>
             <div style={additionalInfoStyle}>
                 <a href="https://www.aslbloom.com" target="_blank" rel="nopener noreferrer">ASL Bloom - Learn American Sign Language (ASL) Online</a><br />
                 <a href="https://www.lifeprint.com/" target="_blank" rel="noopener noreferrer">Lifeprint - ASL University</a><br />
@@ -51,6 +54,14 @@ const HomePage: React.FC = () => {
     );
 };
 
+const logoStyle = {
+  fontSize: "1.5rem",
+  fontWeight: "bold",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  color: colors.MainIcons
+};
 
 const gridStyle: React.CSSProperties = {
     display: 'grid',

@@ -116,7 +116,7 @@ export const AllArticles: Article[] = [
                 {
                     sectionTitle: "Lighting and Signing Space",
                     text: "ASL is a visual language. The first step to understanding is seeing.\n\nMake sure you sign in a well-lit place and ensure there is no backlight or else all that’s going to be seen is your silhouette.\n\nGenerally, the <strong>area where you move your hands</strong> during daily conversations is within your <strong>‘sign box’</strong> as seen below.\nHowever, there are cases where you have to sign in a bigger ‘sign box’ when you sign to a large audience or sign in a smaller sign box when you want to be secretive about what you’re signing or when signing to someone with tunnel vision.",
-                    points: [{ label: "Sign Box", videoUrl: "..." }],
+                    points: [{ label: "Sign Box" }],
                     sources: ["https://youtu.be/LVf-ocZCW1w"]
                 },
                 {

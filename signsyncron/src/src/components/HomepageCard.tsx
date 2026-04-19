@@ -23,7 +23,9 @@ const HomepageCard: React.FC<HomepageCardProps> = ({ title, description, linkUrl
 const HomepageCardStyle: React.CSSProperties = {
     backgroundColor: colors.MainCard,
     borderRadius: '12px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    borderColor: colors.MainAction,
+    borderWidth: '0.5px',
+    borderStyle: 'solid',
     padding: '16px',
     margin: '16px 0',
     display: 'flex',

@@ -1,5 +1,5 @@
 import React from "react";
-import { pageContainerStyle, titleStyle, paragraphStyle, sectiontitlestyle, additionalInfoStyle } from "../theme";
+import { pageContainerStyle, titleStyle, paragraphStyle, sectiontitlestyle, additionalInfoStyle, colors } from "../theme";
 
 
 
@@ -8,14 +8,15 @@ const InfoPage: React.FC = () => {
         <div style={pageContainerStyle}>
             <h1 style={titleStyle}>About Sign_Sync</h1>
             <p style={paragraphStyle}>
-                <img src="https://www.vecteezy.com/free-photos/disclaimer" alt="Disclaimer" />
+                <div style={logoStyle}>
+                    <img src="https://res.cloudinary.com/dqzxf6v8b/image/upload/Untitled48_20260419104030_iiar1k.png" width="120" height="120" />Disclaimer</div>
                 <br />
                 SignSync was created by a novice in ASL and exists to only <strong>introduce</strong> standardized, widely accepted signs from ASL, but our dictionary <strong>does NOT dictate the entire language</strong>. Actual ASL varies between regions and has evolved over time. <br /><br />
                 Resources by Deaf creators and qualified ASL teachers were compiled for the contents of this website in order to <strong>spark interest in ASL</strong>. It is encouraged to go to the linked resources throughout the site to learn ASL in more depth.<br /><br />
                 Sign_Sync is not a comprehensive ASL dictionary, but rather a starting point for those interested in learning ASL. It is important to note that ASL is a complex and nuanced language that cannot be fully captured in a simple dictionary format. <strong>We encourage users to seek out additional resources and opportunities for practice in order to truly master the language.</strong>
             </p>
             <br />
-            <h2 style={sectiontitlestyle}>More Reliable Sources from Professionals</h2>
+            <h2 style={sectiontitlestyle}>More Detailed Learning Mediums:</h2>
             <p style={additionalInfoStyle}>
                 <a href="https://www.aslbloom.com" target="_blank" rel="nopener noreferrer">ASL Bloom - Learn American Sign Language (ASL) Online</a><br />
                 <a href="https://www.lifeprint.com/" target="_blank" rel="noopener noreferrer">Lifeprint - ASL University</a><br />
@@ -26,6 +27,15 @@ const InfoPage: React.FC = () => {
         </div>
     );
 }
+
+const logoStyle = {
+  fontSize: "2rem",
+  fontWeight: "bold",
+  display: "flex",
+  justifyContent: "left",
+  alignItems: "center",
+  color: colors.MainAction
+};
 
 export default InfoPage;
             

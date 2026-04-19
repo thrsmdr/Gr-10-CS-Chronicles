@@ -30,9 +30,9 @@ export const titleStyle: React.CSSProperties = {
     color: colors.MainTextPrimary,
     fontSize: '2.5rem',
     fontWeight: 'bold',
-    marginBottom: '32px',
+    marginBottom: '5px',
     textAlign: 'center',
-    padding: '20px'
+    padding: '15px'
 };
 
 export const paragraphStyle: React.CSSProperties = {
@@ -45,13 +45,23 @@ export const paragraphStyle: React.CSSProperties = {
     whiteSpace: 'pre-wrap'
 };
 
+export const secondaryheaderStyle: React.CSSProperties = {
+    color: colors.MainTextTertiary,
+    fontSize: '1.25rem',
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    marginBottom: '24px',
+    textAlign: 'center',
+    padding: '0 15px'
+};
+
 export const sectiontitlestyle: React.CSSProperties = {
     color: colors.MainTextSecondary,
     fontSize: '1.2rem',
     fontWeight: 'bold',
-    marginBottom: '16px',
+    marginBottom: '5px',
     marginTop: '32px',
-    padding: '20px'
+    padding: '15px'
 };
 
 export const additionalInfoStyle: React.CSSProperties = {
